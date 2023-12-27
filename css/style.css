@@ -1,0 +1,246 @@
+/*Header*/
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+/*generico*/
+h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.section {
+    margin-top: 5%;
+}
+
+/*Main*/
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.4)), url('../img/fondo3.jpg');
+    background-repeat: no-repeat;
+    /*para que no se repita la imagen*/
+    background-size: cover;
+    /*es para que ocupe el 100% de su ancho*/
+    height: 250px;
+    /*alto*/
+    background-position: center;
+    /*centrar la imagen*/
+    text-align: center;
+    padding: 20px 0;
+    /*desde arriba 20px y a los costados 0*/
+    color: white;
+    /*filter: brightness(50%);/*esta propiedad altera a tod s,os elementos del contenedor*/
+}
+
+/*boton contactame*/
+.btn-contactar {
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    border: 1px solid blue;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/*seccion sobre mi*/
+.sobremi {
+    margin-top: 1%;
+    /*es para separar el main de la seccion sobre mi*/
+}
+
+.contenedor-seccion {
+    display: flex;
+    /*por que vamos a usar dos cajas una al lado de la otra*/
+    align-items: center;
+    margin: auto;
+    /*por que se va a acomodar el contenido automatica//*/
+    padding: 20px;
+    width: 50%;
+}
+
+.titulo-sobremi {
+    color: blue;
+}
+
+.imagen {
+    width: 250px;
+    height: 100px;
+    box-shadow: 10px 10px 10px blue;
+}
+
+.contenido-izquierdo {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contenido-izquierdo h3 {
+    font-size: 25px;
+}
+
+.imagen-derecha {
+    flex: 1;
+    text-align: center;
+}
+
+.contenido-izquierdo,
+.imagen-derecha {
+    width: 100%;
+    text-align: center;
+}
+/*Queries sobre mi*/
+@media screen and(max-width:768px) {
+    .contenedor-seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contenido-izquierdo,.imagen-derecha {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:460px) {
+    .imagen {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*sobre mi fin*/
+
+/*Tecnologia*/
+.contenedor {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen-derecha img {
+    width: 250px;
+}
+
+.imagen {
+    width: 250px;
+    height: 200px;
+    box-shadow: 10px 10px 5px blueviolet;
+}
+
+.tarjeta {
+    width: 50%;
+    background-color: beige;
+    max-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 3px blueviolet;
+    /*para cajas u imagen*/
+    text-align: center;
+}
+
+.fa-react {
+    color: rgb(12, 50, 186);
+}
+
+.fa-node {
+    color: green;
+}
+
+.bi-filetype-css {
+    color: brown;
+}
+
+.fa-js {
+    color: rgb(71, 71, 4);
+}
+
+.fa-html5 {
+    color: red;
+}
+
+.fa-database {
+    color: cadetblue;
+}
+
+.tarjeta i {
+    font-size: 45px;
+}
+
+.tarjeta h2 {
+    font-size: 15px;
+}
+
+/*Proyectos*/
+.tarjeta img {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+/*proyectos fin*/
+
+/*Formulario*/
+.formulario {
+    background-color: rgb(56, 56, 155);
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    /*arriba y abajo del 50px*/
+}
+
+/*input*/
+.campo {
+    margin-bottom: 10px;
+    /*separamos entre los campo*/
+
+}
+
+.contenido {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    /*0 de arriba y abajo*/
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 2px solid rgb(102, 102, 140);
+    border-radius: 5px;
+}
+input::placeholder, textarea::placeholder{
+    /*para cambiar el color a las letras de los input*/
+    color:white;
+}
+.submit{
+    background-color: rgb(8, 8, 17);
+    color:white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+}
+/*fin de formulario*/
+
+/*footer*/
+.contenedorFooter{
+    background-color: blue;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 200px;
+    font-size: 25px;
+    padding: 10px;
+}
+/*footer fin*/
